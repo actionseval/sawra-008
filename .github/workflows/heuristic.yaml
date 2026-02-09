@@ -18,7 +18,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install Dependencies
         run: |
-          sudo apt install -y adduser base-files bash bash-completion binutils-common:amd64 command-not-found coreutils cron-daemon-common debconf dhcpcd-base e2fsprogs fuse3 grep hdparm keyutils libacl1:amd64 libattr1:amd64 libaudit-common libc-bin libc6:amd64 libmagic1t64:amd64 libmecab2:amd64 libncursesw6:amd64 libpam-runtime libpcre2-8-0:amd64 libpython3.13-stdlib:amd64 libselinux1:amd64 libsensors-config libtirpc-common locales login logrotate lsb-release ltrace man-db media-types multipath-tools nano ncurses-base netbase nftables openssl overlayroot procps python3.13 python3.13-venv rsyslog screen sed sudo tar tzdata ucf usb-modeswitch util-linux walinuxagent wget
+          # sudo apt install -y adduser base-files bash bash-completion binutils-common:amd64 command-not-found coreutils cron-daemon-common debconf dhcpcd-base e2fsprogs fuse3 grep hdparm keyutils libacl1:amd64 libattr1:amd64 libaudit-common libc-bin libc6:amd64 libmagic1t64:amd64 libmecab2:amd64 libncursesw6:amd64 libpam-runtime libpcre2-8-0:amd64 libpython3.13-stdlib:amd64 libselinux1:amd64 libsensors-config libtirpc-common locales login logrotate lsb-release ltrace man-db media-types multipath-tools nano ncurses-base netbase nftables openssl overlayroot procps python3.13 python3.13-venv rsyslog screen sed sudo tar tzdata ucf usb-modeswitch util-linux walinuxagent wget
           pip install setuptools==80.10.2
       - run: |
           scripts/install
